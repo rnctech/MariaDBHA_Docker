@@ -1,0 +1,13 @@
+#!/bin/bash
+
+docker ps
+
+#docker load -i /tmp/rnctechdb_centos7.tar
+
+echo "run MariaDB image"
+docker run --name=rnctechdb -itdP -p 3306:3306 -p 4567:4567 -p 4444:4444 -p 4568:4568 -e CLST_IP=10.115.35.193 -e DB_1ST=true -e ROOT_PWD=Admin123 -e AMBARI_PWD=Admin123 -e HIVE_PWD=Admin123 -e OOZIE_PWD=Admin123 --net=host rnctech/mariadb
+
+echo "waiting 20 second...."
+sleep 20
+docker ps
+

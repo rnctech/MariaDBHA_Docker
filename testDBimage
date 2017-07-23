@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker ps
+
+docker exec rnctechdb /bin/bash -c "/root/testMariaDB.sh Admin123"
+
