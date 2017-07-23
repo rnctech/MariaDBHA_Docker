@@ -1,3 +1,7 @@
+This repository is setting up MariaDB HA cluster for Ambari Server which is for end-user to install Open Source Haddop such as 
+HortonWorks HDP, IBM IOP etc 
+
+
 Pre-requirement
 0, install docker and start docker service
 
