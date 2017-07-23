@@ -1,6 +1,9 @@
 This repository is setting up MariaDB HA cluster for Ambari Server which is for end-user to install Open Source Haddop such as 
 HortonWorks HDP, IBM IOP etc 
 
+After MariaDB HA setup, we initialize Ambari DB, Hive Datastore and Oozie DB. you can easily remove or change the DML sql file 
+for your delicated usages.
+
 
 Pre-requirement
 0, install docker and start docker service
@@ -18,5 +21,3 @@ and change -e CLST_IP=ip address of slave seperated by comma, such as
 
 3, after all images startup.run cmd to test DB cluster
 ./testDBimage
-
-
